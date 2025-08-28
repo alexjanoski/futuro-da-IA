@@ -3,4 +3,27 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector("caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector("texto-resultado");
+const lista = [item1, item2]
+
+const perguntas = [
+{
+    responda com sim ou não:
+1. Voce ja ouviu falar em inteligecia Artificial (IA)?
+   sim
+   não
+2.Voce ja usou algum programa ou aplicativo que responde perguntas, como a Alexa, siri ouChatGPT?
+  sim
+  não
+3. A IA ja te ajudou a fazer um dever de casa ou trabalho da escola?
+   sim
+   não
+4. Voce acha que a IA pode te ensinar coisas novas, como matematica, português ou ciências?
+   sim
+   não 
+5. Você acha divertido aprender confirmm a ajuda da IA?
+   sim
+   não
+6. você gostaria que a IA ajudasse mais na sua escola?
+   sim
+   não
 
