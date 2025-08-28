@@ -11,7 +11,7 @@ const perguntas = [
 1. Voce ja ouviu falar em inteligecia Artificial (IA)?
    sim
    não
-2.Voce ja usou algum programa ou aplicativo que responde perguntas, como a Alexa, siri ouChatGPT?
+2.Voce ja usou algum programa ou aplicativo que responde perguntas, como a Alexa, siri ou Chat GPT?
   sim
   não
 3. A IA ja te ajudou a fazer um dever de casa ou trabalho da escola?
