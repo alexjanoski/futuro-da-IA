@@ -26,4 +26,23 @@ const perguntas = [
 6. você gostaria que a IA ajudasse mais na sua escola?
    sim
    não
+}
+}
+}
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+   perguntaAtual = perguntas{atual};
+   caixaPerguntas.textoscontent = oerguntaAtual.enunciado;
+   mostraAlternativa();
+}
+   
+    function mostraAlternativas() {
+      for (const alternativa of perguntaAtual.alternativas) {
+         const botaoAlternativas = document.createElement("button");
+         botaoAlternativas.textcontent = alternativa;
+         caixaAlternativas.appendChild(botaoAlternativas);
+      }
+    }
 
