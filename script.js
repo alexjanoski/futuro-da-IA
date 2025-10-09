@@ -60,5 +60,31 @@ function mostraPergunta() {
       caixaAlternativas.textContent = "";
     }
 
-     mostraPergunta();
+     mostraPergunta() {
+      if (atual >= perguntas.length) {
+         mostraResultado();
+         return;
+      }
+      perguntaAtual = perguntaAtual = pergunta[atual];
+      caixaPerguntas.textContent =perguntaAtual.enunciado;
+      caixaAlternativas.textContent ="";
+      mostraAlternativas();
+     }
+
+
+     function mostraAlternativas(){
+      for(const alternativa of perguntaAtual.alternativa){
+         const botaoAlternativas = document.createElement("button");
+         botaoAlternativas.textContent = alternativa.texto;
+         botaoAlternativas.appEventListener("click",() => respostaSelecionada(alternativa));
+         caixaAlternativas.appendchild(botaoAlternativas);
+      }
+     }
+
+     function respostaSelecionada(opcaoSelecionada){
+      const afirmacoes = opcaoSelecionada.afirmacao;
+      historiaFinal += afirmacoes+ "";
+      atual++;
+      mostraPergunta();
+     }
 
