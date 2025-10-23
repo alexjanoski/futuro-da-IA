@@ -35,14 +35,14 @@ let histroriaFinal ="";
 
 function mostraPergunta() {
    perguntaAtual = perguntas{atual};
-   caixaPerguntas.textoscontent = oerguntaAtual.enunciado;
+   caixaPerguntas.textoscontent = perguntaAtual.enunciado;
    mostraAlternativa();
 }
    
     function mostraAlternativas() {
       for (const alternativa of perguntaAtual.alternativas) {
          const botaoAlternativas = document.createElement("button");
-         botaoAlternativas.textcontent = alternativa. texto;
+         botaoAlternativas.textcontent = alternativa.texto;
          botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
          caixaAlternativas.appendChild(botaoAlternativas);
       }
